@@ -53,6 +53,26 @@
       font-weight: bold;
     }
 
+    section {
+      margin-bottom: 50px;
+    }
+
+    section h2 {
+      font-size: 1.3em;
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    p, ul, li {
+      font-size: 0.95em;
+    }
+
     .work-item {
       display: flex;
       flex-wrap: wrap;
@@ -60,13 +80,13 @@
     }
 
     .work-left {
-      flex: 1 1 30%;
+      width: 250px;
       padding-right: 20px;
-      min-width: 220px;
     }
 
     .work-right {
-      flex: 1 1 70%;
+      flex-grow: 1;
+      min-width: 0;
     }
 
     .work-left h3 {
@@ -94,29 +114,10 @@
       }
 
       .work-left {
+        width: 100%;
         padding-right: 0;
         margin-bottom: 15px;
       }
-    }
-
-    section {
-      margin-bottom: 50px;
-    }
-
-    section h2 {
-      font-size: 1.3em;
-      border-bottom: 2px solid #333;
-      padding-bottom: 5px;
-      margin-bottom: 20px;
-    }
-
-    ul {
-      list-style: disc;
-      padding-left: 20px;
-    }
-
-    p, ul, li {
-      font-size: 0.95em;
     }
   </style>
 </head>
@@ -157,12 +158,12 @@
 
   <section>
     <h2>Work Experience</h2>
-
     <div class="work-item">
       <div class="work-left">
         <h3>Cloocus</h3>
         <p>Managed Service Center</p>
-        <p>2021.11 ~ 2025.01<br>클라우드 엔지니어</p>
+        <p>2021.11 ~ 현재: 클라우드 엔지니어</p>
+        <p>2025.02 ~ 현재: 업무 PM 수행</p>
       </div>
       <div class="work-right">
         <ul>
@@ -174,73 +175,6 @@
         </ul>
       </div>
     </div>
-
-    <div class="work-item">
-      <div class="work-left">
-        <h3>Cloocus</h3>
-        <p>Managed Service Center</p>
-        <p>2025.02 ~ 현재<br>대기업 업무 PM</p>
-      </div>
-      <div class="work-right">
-        <ul>
-          <li>Azure 클라우드 인프라 운영, 모니터링 및 장애 대응, 기술 지원, 인프라 설계 및 구축</li>
-          <li>Azure 클라우드 인프라 자동화 업무</li>
-          <li>Kubernetes (AKS) 환경 운영 및 기술 지원</li>
-          <li>Kubernetes (AKS) 및 Azure DevOps 기반의 CI/CD 교육 진행</li>
-          <li>3명 규모 고객 운영 업무 팀 리딩</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Project Highlights</h2>
-    <h3>최적화 컨설팅</h3>
-    <ul>
-      <li>리소스 구조 최적화, Azure 비용 검토</li>
-      <li>VM 스펙 조정, 불필요 리소스 정리</li>
-      <li>Storage 최적화, 리소스 태깅</li>
-      <li>네트워크 구조 검토 및 리소스 최적화</li>
-    </ul>
-
-    <h3>최적화 자동화 프로젝트</h3>
-    <p>Python 기반 Application Gateway 메트릭 분석 및 서비스 품질 진단 자동화 (2023.10 ~ 2023.12)</p>
-
-    <h3>Azure DevOps 마이그레이션 PoC</h3>
-    <p>Azure DevOps, Nexus, AKS, ArgoCD, SonarQube, Jenkins 기반 마이그레이션 PoC (2024.03 ~ 2024.04)</p>
-
-    <h3>VMSS 기반 인프라 구축</h3>
-    <p>Azure VMSS, Compute Gallery, LogicApp, CDN 기반 인프라 구성 프로젝트 (2023.03 ~ 2023.07)</p>
-
-    <h3>교육 업무</h3>
-    <p>Azure Fundamentals, Kubernetes, AKS 교육자료 작성 및 고객사 교육 진행 (2022.09 ~ 현재)</p>
-  </section>
-
-  <section>
-    <h2>Security & Compliance</h2>
-    <ul>
-      <li>Web Service ITSM-P 보안 점검 (RHEL, Windows 기반 시스템 보안 점검)</li>
-      <li>LandingZone 기반 Infra 보안 점검</li>
-      <li>vWAN 환경, M365 연동 인프라 보안 점검, OS 보안 점검 (Ubuntu, Windows)</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Monitoring PoC</h2>
-    <ul>
-      <li>Whatap, OpsNow 기반 Azure/AKS/VM/DB 모니터링 PoC</li>
-      <li>Dynatrace 기반 AKS/VM 모니터링 PoC</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Additional Activities</h2>
-    <ul>
-      <li>Azure Synapse 기반 분석 환경 구성</li>
-      <li>PowerPlatform 기반 PowerBI 환경 운영 및 마이그레이션</li>
-      <li>Python 기반 NSG 이력 관리 자동화 코드 구성 (2025.04~)</li>
-      <li>ExpressRoute 암호화 VPN 구성 지원</li>
-    </ul>
   </section>
 </body>
 </html>
