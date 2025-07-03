@@ -2,12 +2,14 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>Resume</title>
+  <title>오동규 | Cloud Engineer, DevOps</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Noto Sans KR 폰트 추가 -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #ffffff;
+      font-family: 'Noto Sans KR', Arial, sans-serif;
+      background: linear-gradient(to bottom, #f9f9f9, #ffffff);
       color: #333;
       line-height: 1.6;
       max-width: 900px;
@@ -53,15 +55,22 @@
       font-weight: bold;
     }
 
+    .email {
+      color: #2c3e50;
+      font-weight: 600;
+    }
+
     section {
       margin-bottom: 50px;
     }
 
     section h2 {
       font-size: 1.3em;
-      border-bottom: 2px solid #333;
+      border-bottom: 2px solid #2c3e50;
       padding-bottom: 5px;
       margin-bottom: 20px;
+      color: #2c3e50;
+      font-weight: bold;
     }
 
     ul {
@@ -71,6 +80,15 @@
 
     p, ul, li {
       font-size: 0.95em;
+    }
+
+    a {
+      color: #1a73e8;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: #0b59c2;
     }
 
     .work-item {
@@ -106,6 +124,14 @@
 
     .work-right li {
       margin-bottom: 8px;
+      position: relative;
+    }
+
+    .work-right ul li::before {
+      content: '•';
+      color: #2c3e50;
+      font-weight: bold;
+      margin-right: 6px;
     }
 
     @media (max-width: 768px) {
@@ -129,7 +155,7 @@
       <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
       <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
     </div>
-    <p>Email: <a href="mailto:dodream288@gmail.com">dodream288@gmail.com</a></p>
+    <p class="email">Email: <a href="mailto:dodream288@gmail.com">dodream288@gmail.com</a></p>
     <a href="resume.pdf" class="download-button" target="_blank" download>PDF 다운로드</a>
   </header>
 
@@ -140,7 +166,7 @@
       SAP on Azure, Non-SAP Infra, LandingZone 기반 Private 환경, Azure DevOps 및 Kubernetes 운영,
       최적화/보안 점검/자동화 프로젝트 경험 등 대규모 Azure Infra 운영에 강점을 가지고 있습니다.
       고객 환경에 맞는 최적화, 보안 강화, 운영 자동화 작업을 직접 수행하며 서비스 안정성과 품질 개선에 기여해왔습니다.
-      특히 대기업과 다양한 협력사가 있는 운영환경에서 Azure Infra 담당자로서 업무를 수행하였습니다.
+      대기업과 다양한 협력사가 있는 운영환경에서 Azure Infra 담당자로서 업무를 수행하였습니다.
     </p>
   </section>
 
@@ -173,6 +199,7 @@
           <li>Azure 클라우드 인프라 자동화 업무</li>
           <li>Kubernetes (AKS) 환경 운영 및 기술 지원</li>
           <li>Kubernetes (AKS) 및 Azure DevOps 기반의 CI/CD 교육 진행</li>
+          <li>운영 업무 팀 리딩</li>
         </ul>
       </div>
     </div>
