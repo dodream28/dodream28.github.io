@@ -133,6 +133,62 @@
       font-weight: bold;
       margin-right: 6px;
     }
+    
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 2rem;
+      padding-top: 1rem;
+    }
+
+    .category h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .category ul {
+      list-style-type: disc;
+      padding-left: 1.2rem;
+    }
+
+    .category li {
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+
+    #competency {
+      margin-top: 4rem;
+      padding: 2rem;
+    }
+
+    .competency-item {
+      margin-bottom: 3rem;
+    }
+
+    .competency-item h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .competency-item h4 {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 0.2rem;
+    }
+
+    .competency-item .tags {
+      font-size: 0.9rem;
+      font-style: italic;
+      color: #999;
+      margin-bottom: 0.8rem;
+    }
+
+    .competency-item ul {
+      padding-left: 1.2rem;
+      list-style-type: disc;
+      line-height: 1.6;
+    }
 
     @media (max-width: 768px) {
       .work-item {
@@ -170,18 +226,41 @@
     </p>
   </section>
 
-  <section>
-    <h2>Skill Set</h2>
-    <ul>
-      <li>Cloud: Azure (Infra, Networking, Monitoring, Security)</li>
-      <li>Infra: NSG, VNet, Private DNS, Load Balancer, SAP on Azure, Landing Zone</li>
-      <li>DevOps: Azure DevOps, AKS, Kubernetes, ArgoCD, Jenkins, Nexus</li>
-      <li>Monitoring: Grafana, Zabbix, Whatap, Dynatrace, OpsNow</li>
-      <li>Automation: Python 기반 Infra 관리 자동화</li>
-      <li>Security: Azure 보안 점검, NSG 관리 자동화, VMSS, VPN, ER 암호화</li>
-      <li>ETC: Mendix, DataBricks, LogicApp, Synapse</li>
-      <li>Kubernetes: ArgoCD, Loki, Prometheus, Grafana, Nginx Ingress, Helm</li>
-    </ul>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+
+      <div class="category">
+        <h3>Azure Cloud</h3>
+        <ul>
+          <li><strong>Networking:</strong> Virtual Network, Application Gateway, Load Balancer, Azure DNS, Azure VPN, Azure vWAN, Private Endpoint, NSG, UDR, Azure Firewall, DNS Private resolvers</li>
+          <li><strong>Computing:</strong> Virtual Machine, VMSS, App Service, AKS</li>
+          <li><strong>Storage & Security:</strong> Storage Account, Key Vault, ACR</li>
+          <li><strong>Monitoring & Logging:</strong> Azure Monitor, Log Analytics, KQL</li>
+          <li><strong>Governance:</strong> Azure AD, Management Group, Azure Policy, Cost Management</li>
+        </ul>
+      </div>
+
+      <div class="category">
+        <h3>DevOps</h3>
+        <ul>
+          <li><strong>OS:</strong> Linux (Ubuntu, CentOS)</li>
+          <li><strong>Container:</strong> Docker, Kubernetes</li>
+          <li><strong>Scripting & Dev:</strong> Shell Script, Python</li>
+          <li><strong>CI/CD:</strong> Azure DevOps Pipelines</li>
+          <li><strong>VCS:</strong> Git, GitHub</li>
+        </ul>
+      </div>
+
+      <div class="category">
+        <h3>ETC</h3>
+        <ul>
+          <li>Azure Cloud Design and Operational capabilities</li>
+          <li>Cloud infrastructure and network problem solving capabilities</li>
+        </ul>
+      </div>
+
+    </div>
   </section>
 
   <section>
@@ -204,6 +283,82 @@
       </div>
     </div>
   </section>
+
+  <section id="competency">
+    <h2>업무 역량</h2>
+    
+    <div class="competency-item">
+      <h3>1. Azure 클라우드 및 Private Network 환경에서의 운영 및 구축 역량</h3>
+      <h4>Azure Cloud Managed Service</h4>
+      <p class="tags">Azure Cloud, Private Network</p>
+
+      <ul>
+        <li>다양한 고객의 Azure 인프라 온보딩, 인프라 운영, 장애상황 대응</li>
+        <li>Hub & Spoke 구성의 Private Network 환경내에서의 Infra 운영 경험 </li>
+        <li>Azure IaaS, PaaS, Network 관련 기술지원 및 인프라 구축 업무 수행</li>
+        <li>L4~L7 부하분산 서비스 구성 지원, vWAM, VPN, Express Route 등을 통한 네트워크 환경 구성 지원</li>
+        <li>Azure Monitor, Log Analytics 기반 환경 구성 및 운영, TIG Stack 등 모니터링 솔루션 사용경험 보유</li>
+        <li>Azure AD, Azure Policy를 활용한 거버넌스 및 비용 관리 수행</li>
+        <li>Azure Sentienl을 활용한 SAP Log 데이터 모니터링</li>
+      </ul>
+      <p class="portfolio-link">
+        <a href="/portfolio/project-azure-k8s.html" target="_blank">자세히 보기 →</a>
+      </p>
+    </div>
+
+    <div class="competency-item">
+      <h3>2. Kubernetes 활용 역량 (Kubernetes)</h3>
+      <h4>K8s 및 AKS 교육 업무 진행 (정기 교육)</h4>
+      <p class="tags"> Kubernetes, AKS, Grafana, Loki, Helm, ArgoCD</p>
+
+      <ul>
+        <li>Kubernetes(AKS) 인프라 운영 및 장애대응, 기술지원, Azure Monitor와 Whatap을 사용한 클러스터 모니터링</li>
+        <li>
+          <a href="https://www.cloocus.com/cloocus-sprint/" target="_blank"></a>
+            K8s 및 AKS 교육 업무 진행 (정기 교육)
+          </a>
+        </li>
+        <li>Azure Enterprise APP을 활용한 ArgoCD SSO 환경 구성 및 지원</li>
+        <li>AKS 기반 Cluster 버전 업그레이드</li>
+        <li>내부 보안을 위한 Reverse Proxy 운영 및 Ingress 연동</li>
+        <li>KeyVaults를 활용한 Cluster내 인증서 구성 및 운영</li>
+      </ul>
+      <p class="portfolio-link">
+        <a href="/portfolio/project-terraform.html" target="_blank">자세히 보기 →</a>
+      </p>
+    </div>
+
+        <div class="competency-item">
+      <h3>3. CI/CD 구성 및 활용 역량 (Kubernetes)</h3>
+      <h4>Azure DevOps PoC 및 고객 교육, 기술지원</h4>
+      <p class="tags"> Azure DevOps Pipeline, Jenkins</p>
+
+      <ul>
+        <li>Jnekins/ArgoCD를 통한 CI/CD 환경에서 Azure DevOps 기반의 CI/CD 환경 구성</li>
+        <li>Azure DevOps CI/CD 구성 (정기 교육)</li>
+      </ul>
+      <p class="portfolio-link">
+        <a href="/portfolio/project-terraform.html" target="_blank">자세히 보기 →</a>
+      </p>
+    </div>
+
+    <div class="competency-item">
+      <h3>4. 운영환경 내 업무 자동화 </h3>
+      <h4>운영 자동화 환경 구성</h4>
+      <p class="tags"> Azure DevOps, LogicApp, Python</p>
+
+      <ul>
+        <li>Azure DevOps, LogicApp을 활용한 NSG 규칙 업데이트 프로세스 환경 구성</li>
+        <li>Azure DevOps, LogicApp을 활용한 vWAN VPN SIte 장애 대응 프로세스 환경 구성</li>
+      </ul>
+      <p class="portfolio-link">
+        <a href="/portfolio/project-terraform.html" target="_blank">자세히 보기 →</a>
+      </p>
+    </div>
+
+  </section>
+
+
 
   <section>
     <h2>Education</h2>
